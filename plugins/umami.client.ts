@@ -3,9 +3,6 @@ export default defineNuxtPlugin(() => {
 
   if (enable && !import.meta.dev) {
     useScriptUmamiAnalytics({
-      scriptInput: {
-        defer: true,
-      },
       websiteId: dataWebsiteId,
     });
   }

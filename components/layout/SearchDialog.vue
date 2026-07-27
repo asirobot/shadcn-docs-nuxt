@@ -48,7 +48,7 @@
           <div v-else-if="searchResult?.length" class="p-1.5">
             <NuxtLinkLocale
               v-for="(item, i) in searchResult"
-              :id="i"
+              :id="String(i)"
               :key="item.id"
               :to="item.id"
               class="hover:bg-muted flex select-none rounded-md p-2 hover:cursor-pointer"
